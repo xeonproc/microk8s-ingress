@@ -14,4 +14,4 @@ spec:
           service:
             name: argo-cd-argocd-server
             port:
-              number: 8080  # Changed from 80 to 8080
+              number: 80
