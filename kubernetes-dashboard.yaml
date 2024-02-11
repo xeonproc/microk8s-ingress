@@ -8,4 +8,4 @@ spec:
   # This points to the kubernetes-dashboard service in the kube-syste namespace
   externalName: kubernetes-dashboard.kube-system.svc.cluster.local
   ports:
-  - port: 443
+  - port: 10443
