@@ -14,7 +14,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: microbots-service
+            name: microbots-service-external
             port:
               number: 8080
   - host: argocd.localdomain
