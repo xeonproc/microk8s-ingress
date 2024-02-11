@@ -34,6 +34,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: kubernetes-service-external  # Points to the ExternalName service for the dashboard
+            name: kubernetes-dashboard-intermediary  # Points to the ExternalName service for the dashboard
             port:
               number: 8443  # Use the dashboard's internal service port
