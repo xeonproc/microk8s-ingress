@@ -36,4 +36,4 @@ spec:
           service:
             name: kubernetes-dashboard-intermediary  # Points to the ExternalName service for the dashboard
             port:
-              number: 8443  # Use the dashboard's internal service port
+              number: 443  # Use the dashboard's internal service port
