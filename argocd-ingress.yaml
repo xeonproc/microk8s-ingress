@@ -1,10 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: microk8s-ingress-argo-microbots
+  name: microk8s-argocd-ingress
   namespace: argocd
-  annotations:
-    #nginx.ingress.kubernetes.io/rewrite-target: /$1
 spec:
   rules:
   - host: argocd.localdomain
@@ -16,4 +14,4 @@ spec:
           service:
             name: argo-cd-argocd-server
             port:
-              number: 8080
+              number: 8080  # Changed from 80 to 8080
