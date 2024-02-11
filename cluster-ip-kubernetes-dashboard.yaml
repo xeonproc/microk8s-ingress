@@ -6,7 +6,7 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - port: 443
+  - port: 10443
     targetPort: 8443
   selector:
     k8s-app: kubernetes-dashboard
