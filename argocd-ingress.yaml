@@ -7,16 +7,6 @@ metadata:
     #nginx.ingress.kubernetes.io/rewrite-target: /$1
 spec:
   rules:
-  - host: microbots.localdomain
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: microbots-service-external
-            port:
-              number: 8080
   - host: argocd.localdomain
     http:
       paths:
