@@ -6,6 +6,6 @@ metadata:
 spec:
   type: ExternalName
   # This points to the kubernetes-dashboard service in the kube-syste namespace
-  externalName: kuernetes-dashboard.kube-system.svc.cluster.local
+  externalName: kubernetes-dashboard.kube-system.svc.cluster.local
   ports:
   - port: 443
