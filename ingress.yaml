@@ -27,13 +27,3 @@ spec:
             name: argo-cd-argocd-server
             port:
               number: 80
-  - host: kubernetes-dashboard.localdomain
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: kubernetes-dashboard-intermediary  # Points to the ExternalName service for the dashboard
-            port:
-              number: 10443  # Use the dashboard's internal service port
