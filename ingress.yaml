@@ -34,6 +34,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: kubernetes-dashboard
+            name: kubernetes-service-external
             port:
               number: 443
