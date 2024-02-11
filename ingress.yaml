@@ -36,4 +36,4 @@ spec:
           service:
             name: kubernetes-service-external
             port:
-              number: 443
+              number: 10443
