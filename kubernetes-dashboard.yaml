@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   type: ExternalName
-  # This points to the kubernetes-dashboard service in the kube-syste namespace
+  # This correctly points to the kubernetes-dashboard service in the kube-system namespace
   externalName: kubernetes-dashboard.kube-system.svc.cluster.local
   ports:
-  - port: 10443
+  - port: 443  # Adjusted to match the Kubernetes Dashboard's internal port
