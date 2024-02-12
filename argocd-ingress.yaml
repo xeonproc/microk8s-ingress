@@ -1,10 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: argo-ingress
+  name: argocd-ingress
   namespace: argocd
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - host: argocd.localdomain
@@ -16,4 +14,4 @@ spec:
           service:
             name: argo-cd-argocd-server
             port:
-              number: 8080
+              number: 443
