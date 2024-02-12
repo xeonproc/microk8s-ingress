@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: argo-ingress
   namespace: argocd
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - host: argocd.localdomain
