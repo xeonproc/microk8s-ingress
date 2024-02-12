@@ -3,8 +3,6 @@ kind: Ingress
 metadata:
   name: kubernetes-dashboard-ingress
   namespace: kube-system
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - host: kubernetes-dashboard.localdomain
@@ -16,4 +14,4 @@ spec:
           service:
             name: kubernetes-dashboard
             port:
-              number: 8443
+              number: 443
