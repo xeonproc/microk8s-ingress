@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: microk8s-argocd-ingress
+  name: argocd-ingress
   namespace: argocd
 spec:
   rules:
-  - host: argocd.localdomain
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: argocd-server-np
-            port:
-              number: 8080
+    - host: argocd.localdomain  # Update with your desired hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: argocd-server-np
+                port:
+                  number: 80
