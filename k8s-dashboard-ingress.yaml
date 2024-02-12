@@ -4,7 +4,7 @@ metadata:
   name: kubernetes-dashboard-ingress
   namespace: kube-system
     annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+      nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - host: kubernetes-dashboard.localdomain
