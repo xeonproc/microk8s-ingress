@@ -14,4 +14,4 @@ spec:
           service:
             name: kubernetes-dashboar
             port:
-              number: 443
+              number: 8443
